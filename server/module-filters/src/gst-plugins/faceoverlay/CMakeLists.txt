@@ -13,7 +13,7 @@ add_dependencies(kmsfaceoverlay kmsimageoverlay kmsfacedetector)
 
 target_include_directories(kmsfaceoverlay SYSTEM
   PRIVATE
-  ${gstreamer-1.0_INCLUDE_DIRS}
+  ${gstreamer-1.5_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
 )
 
@@ -24,8 +24,8 @@ target_include_directories(kmsfaceoverlay
 
 target_link_libraries(kmsfaceoverlay
   PRIVATE
-  ${gstreamer-1.0_LIBRARIES}
-  ${gstreamer-video-1.0_LIBRARIES}
+  ${gstreamer-1.5_LIBRARIES}
+  ${gstreamer-video-1.5_LIBRARIES}
   ${OpenCV_LIBRARIES}
 )
 

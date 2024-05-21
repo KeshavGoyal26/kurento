@@ -50,15 +50,15 @@ set_property (TARGET ${LIBRARY_NAME}
     ${CMAKE_CURRENT_BINARY_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}/../..
     ${KmsGstCommons_INCLUDE_DIRS}
-    ${gstreamer-1.0_INCLUDE_DIRS}
+    ${gstreamer-1.5_INCLUDE_DIRS}
 )
 
 target_link_libraries(${LIBRARY_NAME}
   ${KmsGstCommons_LIBRARIES}
-  ${gstreamer-1.0_LIBRARIES}
-  ${gstreamer-base-1.0_LIBRARIES}
-  ${gstreamer-app-1.0_LIBRARIES}
-  ${gstreamer-pbutils-1.0_LIBRARIES}
+  ${gstreamer-1.5_LIBRARIES}
+  ${gstreamer-base-1.5_LIBRARIES}
+  ${gstreamer-app-1.5_LIBRARIES}
+  ${gstreamer-pbutils-1.5_LIBRARIES}
   ${libsoup-2.4_LIBRARIES}
 )
 

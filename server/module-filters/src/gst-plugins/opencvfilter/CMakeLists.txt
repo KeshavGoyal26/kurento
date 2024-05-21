@@ -11,7 +11,7 @@ endif()
 
 target_include_directories(kmsopencvfilter SYSTEM
   PRIVATE
-  ${gstreamer-1.0_INCLUDE_DIRS}
+  ${gstreamer-1.5_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
   ${KmsJsonRpc_INCLUDE_DIRS}
   ${KMSCORE_INCLUDE_DIRS}
@@ -25,8 +25,8 @@ target_include_directories(kmsopencvfilter
 
 target_link_libraries(kmsopencvfilter
   PRIVATE
-  ${gstreamer-1.0_LIBRARIES}
-  ${gstreamer-video-1.0_LIBRARIES}
+  ${gstreamer-1.5_LIBRARIES}
+  ${gstreamer-video-1.5_LIBRARIES}
   ${OpenCV_LIBRARIES}
   kmsfiltersimpl
 )

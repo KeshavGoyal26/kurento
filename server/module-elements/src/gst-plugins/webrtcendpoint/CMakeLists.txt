@@ -61,10 +61,10 @@ endif()
 
 target_link_libraries(webrtcdataproto
   ${KmsGstCommons_LIBRARIES}
-  ${gstreamer-1.0_LIBRARIES}
-  ${gstreamer-base-1.0_LIBRARIES}
-  ${gstreamer-app-1.0_LIBRARIES}
-  ${gstreamer-sctp-1.0_LIBRARIES}
+  ${gstreamer-1.5_LIBRARIES}
+  ${gstreamer-base-1.5_LIBRARIES}
+  ${gstreamer-app-1.5_LIBRARIES}
+  ${gstreamer-sctp-1.5_LIBRARIES}
 )
 
 set_property (TARGET webrtcdataproto
@@ -73,8 +73,8 @@ set_property (TARGET webrtcdataproto
     ${CMAKE_CURRENT_BINARY_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}/../../..
     ${KmsGstCommons_INCLUDE_DIRS}
-    ${gstreamer-1.0_INCLUDE_DIRS}
-    ${gstreamer-sctp-1.0_INCLUDE_DIRS}
+    ${gstreamer-1.5_INCLUDE_DIRS}
+    ${gstreamer-sctp-1.5_INCLUDE_DIRS}
 )
 
 set_target_properties(webrtcdataproto PROPERTIES PUBLIC_HEADER "${KMS_WEBRTC_DATA_PROTOCOL_HEADERS}")
@@ -132,9 +132,9 @@ add_dependencies(kmswebrtcendpoint rtcpdemux)
 target_link_libraries(kmswebrtcendpoint
   webrtcdataproto
   ${KmsGstCommons_LIBRARIES}
-  ${gstreamer-1.0_LIBRARIES}
-  ${gstreamer-base-1.0_LIBRARIES}
-  ${gstreamer-pbutils-1.0_LIBRARIES}
+  ${gstreamer-1.5_LIBRARIES}
+  ${gstreamer-base-1.5_LIBRARIES}
+  ${gstreamer-pbutils-1.5_LIBRARIES}
   ${nice_LIBRARIES}
 )
 
@@ -143,8 +143,8 @@ set_property (TARGET kmswebrtcendpoint
     ${CMAKE_CURRENT_BINARY_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}/../../..
     ${KmsGstCommons_INCLUDE_DIRS}
-    ${gstreamer-1.0_INCLUDE_DIRS}
-    ${gstreamer-sctp-1.0_INCLUDE_DIRS}
+    ${gstreamer-1.5_INCLUDE_DIRS}
+    ${gstreamer-sctp-1.5_INCLUDE_DIRS}
     ${nice_INCLUDE_DIRS}
 )
 
@@ -185,8 +185,8 @@ set_property (TARGET webrtcendpoint
   PROPERTY INCLUDE_DIRECTORIES
     ${CMAKE_CURRENT_BINARY_DIR}/../../..
     ${KmsGstCommons_INCLUDE_DIRS}
-    ${gstreamer-1.0_INCLUDE_DIRS}
-    ${gstreamer-sctp-1.0_INCLUDE_DIRS}
+    ${gstreamer-1.5_INCLUDE_DIRS}
+    ${gstreamer-sctp-1.5_INCLUDE_DIRS}
 )
 
 target_link_libraries(webrtcendpoint

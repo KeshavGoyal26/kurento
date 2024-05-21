@@ -19,15 +19,15 @@ target_include_directories(datachannelexample SYSTEM
   PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${KmsGstCommons_INCLUDE_DIRS}
-  ${gstreamer-1.0_INCLUDE_DIRS}
-  ${gstreamer-video-1.0_INCLUDE_DIRS}
+  ${gstreamer-1.5_INCLUDE_DIRS}
+  ${gstreamer-video-1.5_INCLUDE_DIRS}
   ${OpenCV_INCLUDE_DIRS}
 )
 
 target_link_libraries(datachannelexample
   ${KmsGstCommons_LIBRARIES}
-  ${gstreamer-1.0_LIBRARIES}
-  ${gstreamer-video-1.0_LIBRARIES}
+  ${gstreamer-1.5_LIBRARIES}
+  ${gstreamer-video-1.5_LIBRARIES}
   ${OpenCV_LIBRARIES}
 )
 

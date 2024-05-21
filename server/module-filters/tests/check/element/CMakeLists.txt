@@ -4,15 +4,15 @@ add_test_program(test_faceoverlay faceoverlay.c)
 add_dependencies(test_faceoverlay kmsfaceoverlay)
 target_include_directories(test_faceoverlay PRIVATE
   ${KMSCORE_INCLUDE_DIRS}
-  ${gstreamer-1.0_INCLUDE_DIRS}
-  ${gstreamer-check-1.0_INCLUDE_DIRS}
+  ${gstreamer-1.5_INCLUDE_DIRS}
+  ${gstreamer-check-1.5_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}/../../..
   ${CMAKE_CURRENT_SOURCE_DIR}/..
   "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/gst-plugins"
 )
 target_link_libraries(test_faceoverlay
-  ${gstreamer-1.0_LIBRARIES}
-  ${gstreamer-check-1.0_LIBRARIES}
+  ${gstreamer-1.5_LIBRARIES}
+  ${gstreamer-check-1.5_LIBRARIES}
   kmsfilterstestutils
 )
 
@@ -20,15 +20,15 @@ add_test_program(test_movementdetector movementdetector.c)
 add_dependencies(test_movementdetector kmsmovementdetector)
 target_include_directories(test_movementdetector PRIVATE
   ${KMSCORE_INCLUDE_DIRS}
-  ${gstreamer-1.0_INCLUDE_DIRS}
-  ${gstreamer-check-1.0_INCLUDE_DIRS}
+  ${gstreamer-1.5_INCLUDE_DIRS}
+  ${gstreamer-check-1.5_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}/../../..
   ${CMAKE_CURRENT_SOURCE_DIR}/..
   "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/gst-plugins"
 )
 target_link_libraries(test_movementdetector
-  ${gstreamer-1.0_LIBRARIES}
-  ${gstreamer-check-1.0_LIBRARIES}
+  ${gstreamer-1.5_LIBRARIES}
+  ${gstreamer-check-1.5_LIBRARIES}
   kmsfilterstestutils
 )
 
@@ -36,14 +36,14 @@ add_test_program(test_logooverlay logooverlay.c)
 add_dependencies(test_logooverlay kmslogooverlay)
 target_include_directories(test_logooverlay PRIVATE
   ${KMSCORE_INCLUDE_DIRS}
-  ${gstreamer-1.0_INCLUDE_DIRS}
-  ${gstreamer-check-1.0_INCLUDE_DIRS}
+  ${gstreamer-1.5_INCLUDE_DIRS}
+  ${gstreamer-check-1.5_INCLUDE_DIRS}
   ${CMAKE_CURRENT_BINARY_DIR}/../../..
   ${CMAKE_CURRENT_SOURCE_DIR}/..
   "${CMAKE_CURRENT_SOURCE_DIR}/../../../src/gst-plugins"
 )
 target_link_libraries(test_logooverlay
-  ${gstreamer-1.0_LIBRARIES}
-  ${gstreamer-check-1.0_LIBRARIES}
+  ${gstreamer-1.5_LIBRARIES}
+  ${gstreamer-check-1.5_LIBRARIES}
   kmsfilterstestutils
 )

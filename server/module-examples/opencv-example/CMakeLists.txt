@@ -53,7 +53,7 @@ set(GST_REQUIRED ^1.0.0)
 set(OPENCV_REQUIRED <5.0.0)
 
 find_package(PkgConfig)
-pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0>=${GST_REQUIRED})
+pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.5>=${GST_REQUIRED})
 
 include(GenericFind)
 generic_find(LIBNAME KMSCORE VERSION ^7.0.2-dev REQUIRED)
